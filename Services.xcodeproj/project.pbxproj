@@ -1,0 +1,804 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		"Services::ServicesPackageTests::ProductTarget" /* ServicesPackageTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_99 /* Build configuration list for PBXAggregateTarget "ServicesPackageTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				OBJ_102 /* PBXTargetDependency */,
+			);
+			name = ServicesPackageTests;
+			productName = ServicesPackageTests;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		36E2CB8125B571BE00558DC1 /* Ion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E2CB7C25B571BE00558DC1 /* Ion.framework */; };
+		36E2CB8325B571BE00558DC1 /* Framezilla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E2CB7D25B571BE00558DC1 /* Framezilla.framework */; };
+		36E2CB8525B571BE00558DC1 /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E2CB7E25B571BE00558DC1 /* KeychainAccess.framework */; };
+		36E2CB8725B571BE00558DC1 /* PhoneNumberKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E2CB7F25B571BE00558DC1 /* PhoneNumberKit.framework */; };
+		36E2CB8925B571BE00558DC1 /* Base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E2CB8025B571BE00558DC1 /* Base.framework */; };
+		OBJ_108 /* AppReachabilityServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* AppReachabilityServiceTest.swift */; };
+		OBJ_110 /* PartialPhoneFormatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* PartialPhoneFormatTests.swift */; };
+		OBJ_111 /* PhoneFormatHelpersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* PhoneFormatHelpersTests.swift */; };
+		OBJ_112 /* PhoneFormatParsingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* PhoneFormatParsingTests.swift */; };
+		OBJ_113 /* ServiceFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* ServiceFactoryTests.swift */; };
+		OBJ_115 /* Services.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Services::Services::Product" /* Services.framework */; };
+		OBJ_66 /* AppReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* AppReachabilityService.swift */; };
+		OBJ_67 /* AppReachabilityServiceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* AppReachabilityServiceImp.swift */; };
+		OBJ_68 /* ErrorPopupRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* ErrorPopupRoute.swift */; };
+		OBJ_69 /* ErrorPopupSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* ErrorPopupSettings.swift */; };
+		OBJ_70 /* CallService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* CallService.swift */; };
+		OBJ_71 /* CallServiceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* CallServiceImp.swift */; };
+		OBJ_72 /* KeychainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* KeychainService.swift */; };
+		OBJ_73 /* KeychainServiceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* KeychainServiceImp.swift */; };
+		OBJ_74 /* MPNowPlayingInfoCenter+Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* MPNowPlayingInfoCenter+Info.swift */; };
+		OBJ_75 /* NowPlayingInfoCenterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* NowPlayingInfoCenterService.swift */; };
+		OBJ_76 /* Phone.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* Phone.swift */; };
+		OBJ_77 /* PhoneCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* PhoneCountry.swift */; };
+		OBJ_78 /* PhoneFormatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* PhoneFormatService.swift */; };
+		OBJ_79 /* PhoneFormatServiceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* PhoneFormatServiceImp.swift */; };
+		OBJ_80 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* Player.swift */; };
+		OBJ_81 /* PlayerImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* PlayerImp.swift */; };
+		OBJ_82 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* Track.swift */; };
+		OBJ_83 /* ReachabilityService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* ReachabilityService.swift */; };
+		OBJ_84 /* ReachabilityServiceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* ReachabilityServiceImp.swift */; };
+		OBJ_85 /* RemoteCommandCenterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* RemoteCommandCenterService.swift */; };
+		OBJ_86 /* RemoteCommandCenterServiceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* RemoteCommandCenterServiceImp.swift */; };
+		OBJ_87 /* ServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* ServiceFactory.swift */; };
+		OBJ_88 /* ServiceInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* ServiceInitializable.swift */; };
+		OBJ_89 /* UndoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* UndoService.swift */; };
+		OBJ_90 /* UndoServiceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* UndoServiceImp.swift */; };
+		OBJ_97 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		36E2CB7125B571AC00558DC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Services::Services";
+			remoteInfo = Services;
+		};
+		36E2CB7425B571AD00558DC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Services::ServicesTests";
+			remoteInfo = ServicesTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		36E2CB7C25B571BE00558DC1 /* Ion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ion.framework; path = Carthage/Build/iOS/Ion.framework; sourceTree = "<group>"; };
+		36E2CB7D25B571BE00558DC1 /* Framezilla.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Framezilla.framework; path = Carthage/Build/iOS/Framezilla.framework; sourceTree = "<group>"; };
+		36E2CB7E25B571BE00558DC1 /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = Carthage/Build/iOS/KeychainAccess.framework; sourceTree = "<group>"; };
+		36E2CB7F25B571BE00558DC1 /* PhoneNumberKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhoneNumberKit.framework; path = Carthage/Build/iOS/PhoneNumberKit.framework; sourceTree = "<group>"; };
+		36E2CB8025B571BE00558DC1 /* Base.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Base.framework; path = Carthage/Build/iOS/Base.framework; sourceTree = "<group>"; };
+		OBJ_10 /* AppReachabilityServiceImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReachabilityServiceImp.swift; sourceTree = "<group>"; };
+		OBJ_11 /* ErrorPopupRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorPopupRoute.swift; sourceTree = "<group>"; };
+		OBJ_12 /* ErrorPopupSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorPopupSettings.swift; sourceTree = "<group>"; };
+		OBJ_14 /* CallService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallService.swift; sourceTree = "<group>"; };
+		OBJ_15 /* CallServiceImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallServiceImp.swift; sourceTree = "<group>"; };
+		OBJ_17 /* KeychainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainService.swift; sourceTree = "<group>"; };
+		OBJ_18 /* KeychainServiceImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainServiceImp.swift; sourceTree = "<group>"; };
+		OBJ_20 /* MPNowPlayingInfoCenter+Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MPNowPlayingInfoCenter+Info.swift"; sourceTree = "<group>"; };
+		OBJ_21 /* NowPlayingInfoCenterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlayingInfoCenterService.swift; sourceTree = "<group>"; };
+		OBJ_23 /* Phone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phone.swift; sourceTree = "<group>"; };
+		OBJ_24 /* PhoneCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneCountry.swift; sourceTree = "<group>"; };
+		OBJ_25 /* PhoneFormatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneFormatService.swift; sourceTree = "<group>"; };
+		OBJ_26 /* PhoneFormatServiceImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneFormatServiceImp.swift; sourceTree = "<group>"; };
+		OBJ_28 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		OBJ_29 /* PlayerImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerImp.swift; sourceTree = "<group>"; };
+		OBJ_30 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		OBJ_32 /* ReachabilityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityService.swift; sourceTree = "<group>"; };
+		OBJ_33 /* ReachabilityServiceImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityServiceImp.swift; sourceTree = "<group>"; };
+		OBJ_35 /* RemoteCommandCenterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCommandCenterService.swift; sourceTree = "<group>"; };
+		OBJ_36 /* RemoteCommandCenterServiceImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCommandCenterServiceImp.swift; sourceTree = "<group>"; };
+		OBJ_38 /* ServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFactory.swift; sourceTree = "<group>"; };
+		OBJ_39 /* ServiceInitializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceInitializable.swift; sourceTree = "<group>"; };
+		OBJ_41 /* UndoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndoService.swift; sourceTree = "<group>"; };
+		OBJ_42 /* UndoServiceImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndoServiceImp.swift; sourceTree = "<group>"; };
+		OBJ_45 /* AppReachabilityServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReachabilityServiceTest.swift; sourceTree = "<group>"; };
+		OBJ_48 /* PartialPhoneFormatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartialPhoneFormatTests.swift; sourceTree = "<group>"; };
+		OBJ_49 /* PhoneFormatHelpersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneFormatHelpersTests.swift; sourceTree = "<group>"; };
+		OBJ_50 /* PhoneFormatParsingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneFormatParsingTests.swift; sourceTree = "<group>"; };
+		OBJ_52 /* ServiceFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFactoryTests.swift; sourceTree = "<group>"; };
+		OBJ_57 /* Carthage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Carthage; sourceTree = SOURCE_ROOT; };
+		OBJ_58 /* Cartfile.resolved */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile.resolved; sourceTree = "<group>"; };
+		OBJ_59 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_60 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		OBJ_9 /* AppReachabilityService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReachabilityService.swift; sourceTree = "<group>"; };
+		"Services::Services::Product" /* Services.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Services.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"Services::ServicesTests::Product" /* ServicesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = ServicesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_114 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_115 /* Services.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				36E2CB8525B571BE00558DC1 /* KeychainAccess.framework in Frameworks */,
+				36E2CB8125B571BE00558DC1 /* Ion.framework in Frameworks */,
+				36E2CB8925B571BE00558DC1 /* Base.framework in Frameworks */,
+				36E2CB8325B571BE00558DC1 /* Framezilla.framework in Frameworks */,
+				36E2CB8725B571BE00558DC1 /* PhoneNumberKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		36E2CB7B25B571BE00558DC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				36E2CB8025B571BE00558DC1 /* Base.framework */,
+				36E2CB7D25B571BE00558DC1 /* Framezilla.framework */,
+				36E2CB7C25B571BE00558DC1 /* Ion.framework */,
+				36E2CB7E25B571BE00558DC1 /* KeychainAccess.framework */,
+				36E2CB7F25B571BE00558DC1 /* PhoneNumberKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		OBJ_13 /* CallService */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_14 /* CallService.swift */,
+				OBJ_15 /* CallServiceImp.swift */,
+			);
+			path = CallService;
+			sourceTree = "<group>";
+		};
+		OBJ_16 /* KeychainService */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_17 /* KeychainService.swift */,
+				OBJ_18 /* KeychainServiceImp.swift */,
+			);
+			path = KeychainService;
+			sourceTree = "<group>";
+		};
+		OBJ_19 /* NowPlayingInfoCenterService */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_20 /* MPNowPlayingInfoCenter+Info.swift */,
+				OBJ_21 /* NowPlayingInfoCenterService.swift */,
+			);
+			path = NowPlayingInfoCenterService;
+			sourceTree = "<group>";
+		};
+		OBJ_22 /* PhoneFormatService */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_23 /* Phone.swift */,
+				OBJ_24 /* PhoneCountry.swift */,
+				OBJ_25 /* PhoneFormatService.swift */,
+				OBJ_26 /* PhoneFormatServiceImp.swift */,
+			);
+			path = PhoneFormatService;
+			sourceTree = "<group>";
+		};
+		OBJ_27 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_28 /* Player.swift */,
+				OBJ_29 /* PlayerImp.swift */,
+				OBJ_30 /* Track.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		OBJ_31 /* ReachabilityService */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_32 /* ReachabilityService.swift */,
+				OBJ_33 /* ReachabilityServiceImp.swift */,
+			);
+			path = ReachabilityService;
+			sourceTree = "<group>";
+		};
+		OBJ_34 /* RemoteCommandCenterService */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_35 /* RemoteCommandCenterService.swift */,
+				OBJ_36 /* RemoteCommandCenterServiceImp.swift */,
+			);
+			path = RemoteCommandCenterService;
+			sourceTree = "<group>";
+		};
+		OBJ_37 /* ServiceFactory */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_38 /* ServiceFactory.swift */,
+				OBJ_39 /* ServiceInitializable.swift */,
+			);
+			path = ServiceFactory;
+			sourceTree = "<group>";
+		};
+		OBJ_40 /* UndoService */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_41 /* UndoService.swift */,
+				OBJ_42 /* UndoServiceImp.swift */,
+			);
+			path = UndoService;
+			sourceTree = "<group>";
+		};
+		OBJ_43 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_44 /* AppReachabilityService */,
+				OBJ_47 /* PhoneFormatService */,
+				OBJ_51 /* ServiceFactory */,
+			);
+			path = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_44 /* AppReachabilityService */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_45 /* AppReachabilityServiceTest.swift */,
+			);
+			path = AppReachabilityService;
+			sourceTree = "<group>";
+		};
+		OBJ_47 /* PhoneFormatService */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_48 /* PartialPhoneFormatTests.swift */,
+				OBJ_49 /* PhoneFormatHelpersTests.swift */,
+				OBJ_50 /* PhoneFormatParsingTests.swift */,
+			);
+			path = PhoneFormatService;
+			sourceTree = "<group>";
+		};
+		OBJ_5 = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_43 /* Tests */,
+				OBJ_53 /* Products */,
+				OBJ_57 /* Carthage */,
+				OBJ_58 /* Cartfile.resolved */,
+				OBJ_59 /* Cartfile */,
+				OBJ_60 /* README.md */,
+				36E2CB7B25B571BE00558DC1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		OBJ_51 /* ServiceFactory */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_52 /* ServiceFactoryTests.swift */,
+			);
+			path = ServiceFactory;
+			sourceTree = "<group>";
+		};
+		OBJ_53 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"Services::ServicesTests::Product" /* ServicesTests.xctest */,
+				"Services::Services::Product" /* Services.framework */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* AppReachability */,
+				OBJ_13 /* CallService */,
+				OBJ_16 /* KeychainService */,
+				OBJ_19 /* NowPlayingInfoCenterService */,
+				OBJ_22 /* PhoneFormatService */,
+				OBJ_27 /* Player */,
+				OBJ_31 /* ReachabilityService */,
+				OBJ_34 /* RemoteCommandCenterService */,
+				OBJ_37 /* ServiceFactory */,
+				OBJ_40 /* UndoService */,
+			);
+			path = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* AppReachability */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* AppReachabilityService.swift */,
+				OBJ_10 /* AppReachabilityServiceImp.swift */,
+				OBJ_11 /* ErrorPopupRoute.swift */,
+				OBJ_12 /* ErrorPopupSettings.swift */,
+			);
+			path = AppReachability;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"Services::Services" /* Services */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_62 /* Build configuration list for PBXNativeTarget "Services" */;
+			buildPhases = (
+				OBJ_65 /* Sources */,
+				OBJ_91 /* Frameworks */,
+				2635223B4B01F5DE1B6E69DD /* Carthage */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Services;
+			productName = Services;
+			productReference = "Services::Services::Product" /* Services.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Services::ServicesTests" /* ServicesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_104 /* Build configuration list for PBXNativeTarget "ServicesTests" */;
+			buildPhases = (
+				OBJ_107 /* Sources */,
+				OBJ_114 /* Frameworks */,
+				4E29081D512AE85A60E95E2C /* Carthage */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_116 /* PBXTargetDependency */,
+			);
+			name = ServicesTests;
+			productName = ServicesTests;
+			productReference = "Services::ServicesTests::Product" /* ServicesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		"Services::SwiftPMPackageDescription" /* ServicesPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_93 /* Build configuration list for PBXNativeTarget "ServicesPackageDescription" */;
+			buildPhases = (
+				OBJ_96 /* Sources */,
+				A7F6E7A2754445CDF7A4F456 /* Carthage */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ServicesPackageDescription;
+			productName = ServicesPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftMigration = 9999;
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "Services" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5;
+			productRefGroup = OBJ_53 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"Services::Services" /* Services */,
+				"Services::SwiftPMPackageDescription" /* ServicesPackageDescription */,
+				"Services::ServicesPackageTests::ProductTarget" /* ServicesPackageTests */,
+				"Services::ServicesTests" /* ServicesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2635223B4B01F5DE1B6E69DD /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"$(SRCROOT)/xcfilelists/Services-inputPaths.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = Carthage;
+			outputFileListPaths = (
+				"$(SRCROOT)/xcfilelists/Services-outputPaths.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		4E29081D512AE85A60E95E2C /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"$(SRCROOT)/xcfilelists/ServicesTests-inputPaths.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = Carthage;
+			outputFileListPaths = (
+				"$(SRCROOT)/xcfilelists/ServicesTests-outputPaths.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		A7F6E7A2754445CDF7A4F456 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"$(SRCROOT)/xcfilelists/ServicesPackageDescription-inputPaths.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = Carthage;
+			outputFileListPaths = (
+				"$(SRCROOT)/xcfilelists/ServicesPackageDescription-outputPaths.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_107 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_108 /* AppReachabilityServiceTest.swift in Sources */,
+				OBJ_110 /* PartialPhoneFormatTests.swift in Sources */,
+				OBJ_111 /* PhoneFormatHelpersTests.swift in Sources */,
+				OBJ_112 /* PhoneFormatParsingTests.swift in Sources */,
+				OBJ_113 /* ServiceFactoryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_66 /* AppReachabilityService.swift in Sources */,
+				OBJ_67 /* AppReachabilityServiceImp.swift in Sources */,
+				OBJ_68 /* ErrorPopupRoute.swift in Sources */,
+				OBJ_69 /* ErrorPopupSettings.swift in Sources */,
+				OBJ_70 /* CallService.swift in Sources */,
+				OBJ_71 /* CallServiceImp.swift in Sources */,
+				OBJ_72 /* KeychainService.swift in Sources */,
+				OBJ_73 /* KeychainServiceImp.swift in Sources */,
+				OBJ_74 /* MPNowPlayingInfoCenter+Info.swift in Sources */,
+				OBJ_75 /* NowPlayingInfoCenterService.swift in Sources */,
+				OBJ_76 /* Phone.swift in Sources */,
+				OBJ_77 /* PhoneCountry.swift in Sources */,
+				OBJ_78 /* PhoneFormatService.swift in Sources */,
+				OBJ_79 /* PhoneFormatServiceImp.swift in Sources */,
+				OBJ_80 /* Player.swift in Sources */,
+				OBJ_81 /* PlayerImp.swift in Sources */,
+				OBJ_82 /* Track.swift in Sources */,
+				OBJ_83 /* ReachabilityService.swift in Sources */,
+				OBJ_84 /* ReachabilityServiceImp.swift in Sources */,
+				OBJ_85 /* RemoteCommandCenterService.swift in Sources */,
+				OBJ_86 /* RemoteCommandCenterServiceImp.swift in Sources */,
+				OBJ_87 /* ServiceFactory.swift in Sources */,
+				OBJ_88 /* ServiceInitializable.swift in Sources */,
+				OBJ_89 /* UndoService.swift in Sources */,
+				OBJ_90 /* UndoServiceImp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_97 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_102 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Services::ServicesTests" /* ServicesTests */;
+			targetProxy = 36E2CB7425B571AD00558DC1 /* PBXContainerItemProxy */;
+		};
+		OBJ_116 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Services::Services" /* Services */;
+			targetProxy = 36E2CB7125B571AC00558DC1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_100 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_101 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_105 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Services.xcodeproj/ServicesTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = ServicesTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_106 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Services.xcodeproj/ServicesTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = ServicesTests;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+					"DEBUG=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"SWIFT_PACKAGE=1",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) SWIFT_PACKAGE";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+		OBJ_63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Services.xcodeproj/Services_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Services;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = Services;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		OBJ_64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = Services.xcodeproj/Services_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Services;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 5.0;
+				TARGET_NAME = Services;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		OBJ_94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -package-description-version 5.3.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		OBJ_95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk -package-description-version 5.3.0";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_104 /* Build configuration list for PBXNativeTarget "ServicesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_105 /* Debug */,
+				OBJ_106 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_2 /* Build configuration list for PBXProject "Services" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_62 /* Build configuration list for PBXNativeTarget "Services" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_63 /* Debug */,
+				OBJ_64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_93 /* Build configuration list for PBXNativeTarget "ServicesPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_94 /* Debug */,
+				OBJ_95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_99 /* Build configuration list for PBXAggregateTarget "ServicesPackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_100 /* Debug */,
+				OBJ_101 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}
