@@ -44,6 +44,12 @@ public final class PlayerImpl: NSObject, Player {
 
     private var lastTimeValue: CMTime?
 
+    private var rateValue: Float = 1.0 {
+        didSet {
+            trackPlayer.rate = rateValue
+        }
+    }
+
     private lazy var reachabilityStatusCollector = Collector(source: dependencies.reachabilityService.reachabilityStatusEventSource)
 
     // MARK: - Events Binding
@@ -107,6 +113,7 @@ public final class PlayerImpl: NSObject, Player {
     public func stop() {
         trackPlayer.replaceCurrentItem(with: nil)
         track = nil
+        trackPlayer.rate = 1.0
         pause()
         isTrackPaused = false
         stopTime = lastTimeValue?.seconds
@@ -140,8 +147,9 @@ public final class PlayerImpl: NSObject, Player {
         isTrackPlaying = true
         isTrackFinishedPlaying = false
         isTrackPaused = false
-        trackPlayer.rate = 1
         statusEmitter.emit(.playing)
+        trackPlayer.rate = rateValue
+
         dependencies.nowPlayingInfoCenterService.update(isPlaying: true, seconds: trackPlayer.currentTime().seconds)
         dependencies.remoteCommandCenterService.update(isEnabled: true)
     }
@@ -231,7 +239,7 @@ public final class PlayerImpl: NSObject, Player {
         item.preferredForwardBufferDuration = skipTimeInterval
 
         trackPlayer.replaceCurrentItem(with: item)
-        trackPlayer.rate = 1
+        trackPlayer.rate = rateValue
     }
 
     private func handleSeek() {
