@@ -154,11 +154,16 @@ public final class PlayerImpl: NSObject, Player {
         dependencies.remoteCommandCenterService.update(isEnabled: true)
     }
 
+    public func changeRate(withRate rate: Float) {
+        rateValue = rate
+    }
+
     public func skipForward() {
         guard let duration = track?.duration,
             duration > skipTimeInterval else {
             return
         }
+
         seek(toTime: trackPlayer.currentTime().seconds + skipTimeInterval)
     }
 
