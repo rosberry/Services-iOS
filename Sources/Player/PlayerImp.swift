@@ -46,7 +46,10 @@ public final class PlayerImpl: NSObject, Player {
 
     private var rateValue: Float = 1.0 {
         didSet {
-            trackPlayer.rate = rateValue
+            guard state == .playing else {
+                return
+            }
+                trackPlayer.rate = rateValue
         }
     }
 
@@ -154,7 +157,7 @@ public final class PlayerImpl: NSObject, Player {
         dependencies.remoteCommandCenterService.update(isEnabled: true)
     }
 
-    public func changeRate(withRate rate: Float) {
+    public func updatePlayerRate(_ rate: Float) {
         rateValue = rate
     }
 
