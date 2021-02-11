@@ -44,12 +44,12 @@ public final class PlayerImpl: NSObject, Player {
 
     private var lastTimeValue: CMTime?
 
-    private var rateValue: Float = 1.0 {
+    private var playerRate: Float = 1.0 {
         didSet {
             guard state == .playing else {
                 return
             }
-                trackPlayer.rate = rateValue
+                trackPlayer.rate = playerRate
         }
     }
 
@@ -151,14 +151,14 @@ public final class PlayerImpl: NSObject, Player {
         isTrackFinishedPlaying = false
         isTrackPaused = false
         statusEmitter.emit(.playing)
-        trackPlayer.rate = rateValue
+        trackPlayer.rate = playerRate
 
         dependencies.nowPlayingInfoCenterService.update(isPlaying: true, seconds: trackPlayer.currentTime().seconds)
         dependencies.remoteCommandCenterService.update(isEnabled: true)
     }
 
     public func updatePlayerRate(_ rate: Float) {
-        rateValue = rate
+        playerRate = rate
     }
 
     public func skipForward() {
@@ -247,7 +247,7 @@ public final class PlayerImpl: NSObject, Player {
         item.preferredForwardBufferDuration = skipTimeInterval
 
         trackPlayer.replaceCurrentItem(with: item)
-        trackPlayer.rate = rateValue
+        trackPlayer.rate = playerRate
     }
 
     private func handleSeek() {
