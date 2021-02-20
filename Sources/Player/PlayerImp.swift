@@ -49,7 +49,7 @@ public final class PlayerImpl: NSObject, Player {
             guard state == .playing else {
                 return
             }
-                trackPlayer.rate = playerRate
+            trackPlayer.rate = playerRate
         }
     }
 
