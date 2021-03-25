@@ -1,4 +1,4 @@
 github "Rosberry/ion"
 github "marmelroy/PhoneNumberKit"
 github "kishikawakatsumi/KeychainAccess"
-github "rosberry/Base-iOS" "master"
+github "rosberry/Base-iOS" "xcframework"

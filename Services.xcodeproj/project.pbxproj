@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -21,11 +21,16 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		36E2CB8125B571BE00558DC1 /* Ion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E2CB7C25B571BE00558DC1 /* Ion.framework */; };
-		36E2CB8325B571BE00558DC1 /* Framezilla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E2CB7D25B571BE00558DC1 /* Framezilla.framework */; };
-		36E2CB8525B571BE00558DC1 /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E2CB7E25B571BE00558DC1 /* KeychainAccess.framework */; };
-		36E2CB8725B571BE00558DC1 /* PhoneNumberKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E2CB7F25B571BE00558DC1 /* PhoneNumberKit.framework */; };
-		36E2CB8925B571BE00558DC1 /* Base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36E2CB8025B571BE00558DC1 /* Base.framework */; };
+		3664CD82260C7ED4003F7673 /* KeychainAccess.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3664CD7D260C7ED4003F7673 /* KeychainAccess.xcframework */; };
+		3664CD83260C7ED4003F7673 /* KeychainAccess.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3664CD7D260C7ED4003F7673 /* KeychainAccess.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3664CD84260C7ED4003F7673 /* Ion.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3664CD7E260C7ED4003F7673 /* Ion.xcframework */; };
+		3664CD85260C7ED4003F7673 /* Ion.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3664CD7E260C7ED4003F7673 /* Ion.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3664CD86260C7ED4003F7673 /* Base.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3664CD7F260C7ED4003F7673 /* Base.xcframework */; };
+		3664CD87260C7ED4003F7673 /* Base.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3664CD7F260C7ED4003F7673 /* Base.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3664CD88260C7ED4003F7673 /* PhoneNumberKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3664CD80260C7ED4003F7673 /* PhoneNumberKit.xcframework */; };
+		3664CD89260C7ED4003F7673 /* PhoneNumberKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3664CD80260C7ED4003F7673 /* PhoneNumberKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3664CD8A260C7ED4003F7673 /* Framezilla.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3664CD81260C7ED4003F7673 /* Framezilla.xcframework */; };
+		3664CD8B260C7ED5003F7673 /* Framezilla.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3664CD81260C7ED4003F7673 /* Framezilla.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		OBJ_108 /* AppReachabilityServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* AppReachabilityServiceTest.swift */; };
 		OBJ_110 /* PartialPhoneFormatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* PartialPhoneFormatTests.swift */; };
 		OBJ_111 /* PhoneFormatHelpersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* PhoneFormatHelpersTests.swift */; };
@@ -77,7 +82,30 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3664CD8C260C7ED5003F7673 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3664CD89260C7ED4003F7673 /* PhoneNumberKit.xcframework in Embed Frameworks */,
+				3664CD87260C7ED4003F7673 /* Base.xcframework in Embed Frameworks */,
+				3664CD85260C7ED4003F7673 /* Ion.xcframework in Embed Frameworks */,
+				3664CD8B260C7ED5003F7673 /* Framezilla.xcframework in Embed Frameworks */,
+				3664CD83260C7ED4003F7673 /* KeychainAccess.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3664CD7D260C7ED4003F7673 /* KeychainAccess.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KeychainAccess.xcframework; path = Carthage/Build/KeychainAccess.xcframework; sourceTree = "<group>"; };
+		3664CD7E260C7ED4003F7673 /* Ion.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Ion.xcframework; path = Carthage/Build/Ion.xcframework; sourceTree = "<group>"; };
+		3664CD7F260C7ED4003F7673 /* Base.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Base.xcframework; path = Carthage/Build/Base.xcframework; sourceTree = "<group>"; };
+		3664CD80260C7ED4003F7673 /* PhoneNumberKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PhoneNumberKit.xcframework; path = Carthage/Build/PhoneNumberKit.xcframework; sourceTree = "<group>"; };
+		3664CD81260C7ED4003F7673 /* Framezilla.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Framezilla.xcframework; path = Carthage/Build/Framezilla.xcframework; sourceTree = "<group>"; };
 		36E2CB7C25B571BE00558DC1 /* Ion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ion.framework; path = Carthage/Build/iOS/Ion.framework; sourceTree = "<group>"; };
 		36E2CB7D25B571BE00558DC1 /* Framezilla.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Framezilla.framework; path = Carthage/Build/iOS/Framezilla.framework; sourceTree = "<group>"; };
 		36E2CB7E25B571BE00558DC1 /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = Carthage/Build/iOS/KeychainAccess.framework; sourceTree = "<group>"; };
@@ -135,11 +163,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				36E2CB8525B571BE00558DC1 /* KeychainAccess.framework in Frameworks */,
-				36E2CB8125B571BE00558DC1 /* Ion.framework in Frameworks */,
-				36E2CB8925B571BE00558DC1 /* Base.framework in Frameworks */,
-				36E2CB8325B571BE00558DC1 /* Framezilla.framework in Frameworks */,
-				36E2CB8725B571BE00558DC1 /* PhoneNumberKit.framework in Frameworks */,
+				3664CD88260C7ED4003F7673 /* PhoneNumberKit.xcframework in Frameworks */,
+				3664CD86260C7ED4003F7673 /* Base.xcframework in Frameworks */,
+				3664CD84260C7ED4003F7673 /* Ion.xcframework in Frameworks */,
+				3664CD8A260C7ED4003F7673 /* Framezilla.xcframework in Frameworks */,
+				3664CD82260C7ED4003F7673 /* KeychainAccess.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +177,11 @@
 		36E2CB7B25B571BE00558DC1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3664CD7F260C7ED4003F7673 /* Base.xcframework */,
+				3664CD81260C7ED4003F7673 /* Framezilla.xcframework */,
+				3664CD7E260C7ED4003F7673 /* Ion.xcframework */,
+				3664CD7D260C7ED4003F7673 /* KeychainAccess.xcframework */,
+				3664CD80260C7ED4003F7673 /* PhoneNumberKit.xcframework */,
 				36E2CB8025B571BE00558DC1 /* Base.framework */,
 				36E2CB7D25B571BE00558DC1 /* Framezilla.framework */,
 				36E2CB7C25B571BE00558DC1 /* Ion.framework */,
@@ -339,7 +372,7 @@
 			buildPhases = (
 				OBJ_65 /* Sources */,
 				OBJ_91 /* Frameworks */,
-				2635223B4B01F5DE1B6E69DD /* Carthage */,
+				3664CD8C260C7ED5003F7673 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -356,7 +389,6 @@
 			buildPhases = (
 				OBJ_107 /* Sources */,
 				OBJ_114 /* Frameworks */,
-				4E29081D512AE85A60E95E2C /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -373,7 +405,6 @@
 			buildConfigurationList = OBJ_93 /* Build configuration list for PBXNativeTarget "ServicesPackageDescription" */;
 			buildPhases = (
 				OBJ_96 /* Sources */,
-				A7F6E7A2754445CDF7A4F456 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -411,69 +442,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		2635223B4B01F5DE1B6E69DD /* Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"$(SRCROOT)/xcfilelists/Services-inputPaths.xcfilelist",
-			);
-			inputPaths = (
-			);
-			name = Carthage;
-			outputFileListPaths = (
-				"$(SRCROOT)/xcfilelists/Services-outputPaths.xcfilelist",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-		4E29081D512AE85A60E95E2C /* Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"$(SRCROOT)/xcfilelists/ServicesTests-inputPaths.xcfilelist",
-			);
-			inputPaths = (
-			);
-			name = Carthage;
-			outputFileListPaths = (
-				"$(SRCROOT)/xcfilelists/ServicesTests-outputPaths.xcfilelist",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-		A7F6E7A2754445CDF7A4F456 /* Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"$(SRCROOT)/xcfilelists/ServicesPackageDescription-inputPaths.xcfilelist",
-			);
-			inputPaths = (
-			);
-			name = Carthage;
-			outputFileListPaths = (
-				"$(SRCROOT)/xcfilelists/ServicesPackageDescription-outputPaths.xcfilelist",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		OBJ_107 /* Sources */ = {
