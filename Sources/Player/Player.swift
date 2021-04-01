@@ -41,6 +41,7 @@ public protocol Player: class {
     func resume()
     func pause()
     func stop()
+    func updatePlayerRate(_ rate: Float)
 
     func skipForward()
     func skipBackward()
