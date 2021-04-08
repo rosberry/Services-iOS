@@ -54,7 +54,7 @@ Dependencies:
 
 [Depo](https://github.com/rosberry/depo) is a universal dependency manager that combines CocoaPods, Carthage and SPM.
 
-You can use Depo to install Layout by adding it to your `Depofile`:
+You can use Depo to install Services-iOS by adding it to your `Depofile`:
 ```yaml
 carts:
   - kind: github
