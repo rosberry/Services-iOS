@@ -22,15 +22,10 @@
 
 /* Begin PBXBuildFile section */
 		3664CD82260C7ED4003F7673 /* KeychainAccess.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3664CD7D260C7ED4003F7673 /* KeychainAccess.xcframework */; };
-		3664CD83260C7ED4003F7673 /* KeychainAccess.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3664CD7D260C7ED4003F7673 /* KeychainAccess.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3664CD84260C7ED4003F7673 /* Ion.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3664CD7E260C7ED4003F7673 /* Ion.xcframework */; };
-		3664CD85260C7ED4003F7673 /* Ion.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3664CD7E260C7ED4003F7673 /* Ion.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3664CD86260C7ED4003F7673 /* Base.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3664CD7F260C7ED4003F7673 /* Base.xcframework */; };
-		3664CD87260C7ED4003F7673 /* Base.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3664CD7F260C7ED4003F7673 /* Base.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3664CD88260C7ED4003F7673 /* PhoneNumberKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3664CD80260C7ED4003F7673 /* PhoneNumberKit.xcframework */; };
-		3664CD89260C7ED4003F7673 /* PhoneNumberKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3664CD80260C7ED4003F7673 /* PhoneNumberKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3664CD8A260C7ED4003F7673 /* Framezilla.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3664CD81260C7ED4003F7673 /* Framezilla.xcframework */; };
-		3664CD8B260C7ED5003F7673 /* Framezilla.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3664CD81260C7ED4003F7673 /* Framezilla.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		OBJ_108 /* AppReachabilityServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* AppReachabilityServiceTest.swift */; };
 		OBJ_110 /* PartialPhoneFormatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* PartialPhoneFormatTests.swift */; };
 		OBJ_111 /* PhoneFormatHelpersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* PhoneFormatHelpersTests.swift */; };
@@ -81,24 +76,6 @@
 			remoteInfo = ServicesTests;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		3664CD8C260C7ED5003F7673 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				3664CD89260C7ED4003F7673 /* PhoneNumberKit.xcframework in Embed Frameworks */,
-				3664CD87260C7ED4003F7673 /* Base.xcframework in Embed Frameworks */,
-				3664CD85260C7ED4003F7673 /* Ion.xcframework in Embed Frameworks */,
-				3664CD8B260C7ED5003F7673 /* Framezilla.xcframework in Embed Frameworks */,
-				3664CD83260C7ED4003F7673 /* KeychainAccess.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3664CD7D260C7ED4003F7673 /* KeychainAccess.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = KeychainAccess.xcframework; path = Carthage/Build/KeychainAccess.xcframework; sourceTree = "<group>"; };
@@ -372,7 +349,6 @@
 			buildPhases = (
 				OBJ_65 /* Sources */,
 				OBJ_91 /* Frameworks */,
-				3664CD8C260C7ED5003F7673 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
