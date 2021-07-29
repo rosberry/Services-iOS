@@ -15,13 +15,17 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
+      .package(name: "Ion", url: "https://github.com/rosberry/ion", .branch("update-package-swift")),
+      .package(name: "Base", url: "https://github.com/rosberry/Base-iOS", .branch("master")),
+      .package(url: "https://github.com/kishikawakatsumi/KeychainAccess", from: "4.2.2"),
+      .package(url: "https://github.com/marmelroy/PhoneNumberKit", from: "3.3.3"),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "Services",
-            dependencies: [],
+            dependencies: ["Ion", "Base", "KeychainAccess", "PhoneNumberKit"],
             path: "Sources"),
         .testTarget(
             name: "ServicesTests",
