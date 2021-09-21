@@ -15,7 +15,7 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         // .package(url: /* package url */, from: "1.0.0"),
-      .package(name: "Ion", url: "https://github.com/rosberry/ion", .branch("update-package-swift")),
+      .package(name: "Ion", url: "https://github.com/rosberry/ion", .branch("master")),
       .package(name: "Base", url: "https://github.com/rosberry/Base-iOS", .branch("master")),
       .package(url: "https://github.com/kishikawakatsumi/KeychainAccess", from: "4.2.2"),
       .package(url: "https://github.com/marmelroy/PhoneNumberKit", from: "3.3.3"),

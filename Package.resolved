@@ -6,7 +6,7 @@
         "repositoryURL": "https://github.com/rosberry/Base-iOS",
         "state": {
           "branch": "master",
-          "revision": "8eb6695403aeb4e16525ccbcca07d97147c016ba",
+          "revision": "35940e87830dbdd20748c731db8fc0caa873b92b",
           "version": null
         }
       },
@@ -14,8 +14,8 @@
         "package": "Framezilla",
         "repositoryURL": "https://github.com/rosberry/Framezilla",
         "state": {
-          "branch": "feature/update-spm-manifest",
-          "revision": "22394eee07e845df421f663827d236f36a73587c",
+          "branch": "master",
+          "revision": "1a757e608731f8d51accc1e9864edc1c41d9e75e",
           "version": null
         }
       },
@@ -23,8 +23,8 @@
         "package": "Ion",
         "repositoryURL": "https://github.com/rosberry/ion",
         "state": {
-          "branch": "update-package-swift",
-          "revision": "fcc19b84cf6affc14abc985f97fec823bf14362d",
+          "branch": "master",
+          "revision": "07d9da3c4b0cfe0e30f9e93eda8b8a950bcc8a15",
           "version": null
         }
       },
