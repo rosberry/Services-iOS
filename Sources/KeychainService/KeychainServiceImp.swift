@@ -5,11 +5,11 @@
 import Foundation
 import KeychainAccess
 
-public class KeychainServiceImp: KeychainService {
+public class KeychainServiceImp: KeychainService, ServiceInitializable {
 
     public let keychain: Keychain
 
-    public init(keychain: Keychain = .init()) {
-        self.keychain = keychain
+    required public init(dependencies: Any = []) {
+        self.keychain = .init()
     }
 }
