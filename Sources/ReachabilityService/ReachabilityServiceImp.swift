@@ -8,10 +8,17 @@ import Network
 public class ReachabilityServiceImp: ReachabilityService, ServiceInitializable {
     public typealias Dependencies = Any
 
+    private var lastStatus: NWPath.Status?
+
     private lazy var monitor: NWPathMonitor = {
         let monitor = NWPathMonitor()
-        monitor.pathUpdateHandler = { [weak emitter] path in
-            emitter?.emit(path.status == .satisfied)
+        monitor.pathUpdateHandler = { [weak emitter, weak self] path in
+            DispatchQueue.main.async {
+                if path.status != self?.lastStatus {
+                    emitter?.emit(path.status == .satisfied)
+                }
+                self?.lastStatus = path.status
+            }
         }
         return monitor
     }()
