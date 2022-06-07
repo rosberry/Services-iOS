@@ -4,6 +4,7 @@
 
 import Foundation
 import Ion
+import AVFoundation
 
 public protocol HasPlayer {
     var player: Player { get }
@@ -26,6 +27,7 @@ public protocol Player: class {
     var isTrackSeeking: Bool { get }
     var isTrackPaused: Bool { get }
 
+    var trackPlayer: AVPlayer { get }
     var track: Track? { get }
     var stopTime: CFTimeInterval? { get }
 

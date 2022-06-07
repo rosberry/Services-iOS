@@ -13,7 +13,7 @@ public final class PlayerImpl: NSObject, Player {
 
     let dependencies: Dependencies
 
-    private let trackPlayer: AVPlayer = {
+    public var trackPlayer: AVPlayer = {
         let player = AVPlayer()
         player.automaticallyWaitsToMinimizeStalling = false
         return player
